@@ -6,11 +6,44 @@
 
 #import <Availability.h>
 
+#ifdef __APPLE__
+#include "TargetConditionals.h"
+#endif
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
 #ifdef __OBJC__
+    // Core Frameworks
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import <MediaPlayer/MediaPlayer.h>
+
+    //#import <AVFoundation/AVFoundation.h>
+    //#import <MapKit/MapKit.h>
+    //#import <AddressBook/AddressBook.h>
+    //#import <AddressBookUI/AddressBookUI.h>
+    //#import <CoreMotion/CoreMotion.h>
+
+    // 3rd-Party
+    #import "ReactiveCocoa/ReactiveCocoa.h"
+    #import "ReactiveCocoa/EXTScope.h"
+
+    // Project-specific
+    //#import "Constants.h"
+
+
+#ifndef IS_IPAD
+#define IS_IPAD   ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+#endif
+#ifndef IS_IPHONE
+#define IS_IPHONE   (!IS_IPAD)
+#endif
+#ifndef IS_RETINA
+#define IS_RETINA ([[UIScreen mainScreen] respondsToSelector:@selector(scale)] && [[UIScreen mainScreen] scale] == 2)
+#endif
+
+#define AssertOverriddenMethod() NSAssert(NO, @"You must override %@ in a subclass", NSStringFromSelector(_cmd))
+
 #endif

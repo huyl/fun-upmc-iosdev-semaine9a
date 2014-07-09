@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02A568F4E724454B8D704057 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7470BF3BDFF74C2A8582D288 /* libPods.a */; };
 		E555BE26196793F100F65018 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555BE25196793F100F65018 /* Foundation.framework */; };
 		E555BE28196793F100F65018 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555BE27196793F100F65018 /* CoreGraphics.framework */; };
 		E555BE2A196793F100F65018 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555BE29196793F100F65018 /* UIKit.framework */; };
@@ -22,6 +23,13 @@
 		E555BE4A196793F100F65018 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E555BE29196793F100F65018 /* UIKit.framework */; };
 		E555BE52196793F100F65018 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E555BE50196793F100F65018 /* InfoPlist.strings */; };
 		E555BE54196793F100F65018 /* owned_TaperJouerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E555BE53196793F100F65018 /* owned_TaperJouerTests.m */; };
+		E555BE5E196795BA00F65018 /* libReactiveCocoa-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E555BE5D196795B900F65018 /* libReactiveCocoa-iOS.a */; };
+		E555BE6119679C4900F65018 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E555BE6019679C4900F65018 /* MainViewController.m */; };
+		E555BE6419679C6E00F65018 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E555BE6319679C6E00F65018 /* HistoryViewController.m */; };
+		E57AD5A31967D56E008FE501 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57AD59D1967D317008FE501 /* MediaPlayer.framework */; };
+		E57AD5A61967E431008FE501 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E57AD5A51967E431008FE501 /* ViewModel.m */; };
+		E57AD5A91967F535008FE501 /* tete-a-toto.png in Resources */ = {isa = PBXBuildFile; fileRef = E57AD5A81967F535008FE501 /* tete-a-toto.png */; };
+		E57AD5AB19689616008FE501 /* no_artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = E57AD5AA19689616008FE501 /* no_artwork.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7470BF3BDFF74C2A8582D288 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89834CAB40C471E89BCECDF /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		E555BE22196793F100F65018 /* owned-TaperJouer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "owned-TaperJouer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E555BE25196793F100F65018 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E555BE27196793F100F65018 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +65,17 @@
 		E555BE4F196793F100F65018 /* owned-TaperJouerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "owned-TaperJouerTests-Info.plist"; sourceTree = "<group>"; };
 		E555BE51196793F100F65018 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E555BE53196793F100F65018 /* owned_TaperJouerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = owned_TaperJouerTests.m; sourceTree = "<group>"; };
+		E555BE5D196795B900F65018 /* libReactiveCocoa-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libReactiveCocoa-iOS.a"; path = "external/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos/libReactiveCocoa-iOS.a"; sourceTree = "<group>"; };
+		E555BE5F19679C4900F65018 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		E555BE6019679C4900F65018 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		E555BE6219679C6E00F65018 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		E555BE6319679C6E00F65018 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		E57AD59D1967D317008FE501 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E57AD5A11967D519008FE501 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E57AD5A41967E431008FE501 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		E57AD5A51967E431008FE501 /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		E57AD5A81967F535008FE501 /* tete-a-toto.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tete-a-toto.png"; sourceTree = "<group>"; };
+		E57AD5AA19689616008FE501 /* no_artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_artwork.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57AD5A31967D56E008FE501 /* MediaPlayer.framework in Frameworks */,
+				E555BE5E196795BA00F65018 /* libReactiveCocoa-iOS.a in Frameworks */,
 				E555BE28196793F100F65018 /* CoreGraphics.framework in Frameworks */,
 				E555BE2A196793F100F65018 /* UIKit.framework in Frameworks */,
 				E555BE26196793F100F65018 /* Foundation.framework in Frameworks */,
+				02A568F4E724454B8D704057 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +112,7 @@
 				E555BE4D196793F100F65018 /* owned-TaperJouerTests */,
 				E555BE24196793F100F65018 /* Frameworks */,
 				E555BE23196793F100F65018 /* Products */,
+				C89834CAB40C471E89BCECDF /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,10 +128,14 @@
 		E555BE24196793F100F65018 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E57AD5A11967D519008FE501 /* AVFoundation.framework */,
+				E57AD59D1967D317008FE501 /* MediaPlayer.framework */,
+				E555BE5D196795B900F65018 /* libReactiveCocoa-iOS.a */,
 				E555BE25196793F100F65018 /* Foundation.framework */,
 				E555BE27196793F100F65018 /* CoreGraphics.framework */,
 				E555BE29196793F100F65018 /* UIKit.framework */,
 				E555BE47196793F100F65018 /* XCTest.framework */,
+				7470BF3BDFF74C2A8582D288 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,10 +145,17 @@
 			children = (
 				E555BE34196793F100F65018 /* AppDelegate.h */,
 				E555BE35196793F100F65018 /* AppDelegate.m */,
+				E555BE5F19679C4900F65018 /* MainViewController.h */,
+				E555BE6019679C4900F65018 /* MainViewController.m */,
+				E555BE6219679C6E00F65018 /* HistoryViewController.h */,
+				E555BE6319679C6E00F65018 /* HistoryViewController.m */,
 				E555BE37196793F100F65018 /* Main_iPhone.storyboard */,
 				E555BE3A196793F100F65018 /* Main_iPad.storyboard */,
 				E555BE3D196793F100F65018 /* ViewController.h */,
 				E555BE3E196793F100F65018 /* ViewController.m */,
+				E57AD5A41967E431008FE501 /* ViewModel.h */,
+				E57AD5A51967E431008FE501 /* ViewModel.m */,
+				E57AD5A71967F535008FE501 /* images */,
 				E555BE40196793F100F65018 /* Images.xcassets */,
 				E555BE2C196793F100F65018 /* Supporting Files */,
 			);
@@ -155,6 +191,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E57AD5A71967F535008FE501 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E57AD5AA19689616008FE501 /* no_artwork.png */,
+				E57AD5A81967F535008FE501 /* tete-a-toto.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E555BE57196793F100F65018 /* Build configuration list for PBXNativeTarget "owned-TaperJouer" */;
 			buildPhases = (
+				A74DCE6FD38245F68B1F3F39 /* Check Pods Manifest.lock */,
 				E555BE1E196793F100F65018 /* Sources */,
 				E555BE1F196793F100F65018 /* Frameworks */,
 				E555BE20196793F100F65018 /* Resources */,
+				42A348BECACF413E9276898B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +280,8 @@
 			files = (
 				E555BE3C196793F100F65018 /* Main_iPad.storyboard in Resources */,
 				E555BE41196793F100F65018 /* Images.xcassets in Resources */,
+				E57AD5A91967F535008FE501 /* tete-a-toto.png in Resources */,
+				E57AD5AB19689616008FE501 /* no_artwork.png in Resources */,
 				E555BE39196793F100F65018 /* Main_iPhone.storyboard in Resources */,
 				E555BE30196793F100F65018 /* InfoPlist.strings in Resources */,
 			);
@@ -248,11 +297,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42A348BECACF413E9276898B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A74DCE6FD38245F68B1F3F39 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E555BE1E196793F100F65018 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E57AD5A61967E431008FE501 /* ViewModel.m in Sources */,
+				E555BE6419679C6E00F65018 /* HistoryViewController.m in Sources */,
+				E555BE6119679C4900F65018 /* MainViewController.m in Sources */,
 				E555BE3F196793F100F65018 /* ViewController.m in Sources */,
 				E555BE36196793F100F65018 /* AppDelegate.m in Sources */,
 				E555BE32196793F100F65018 /* main.m in Sources */,
@@ -387,12 +472,25 @@
 		};
 		E555BE58196793F100F65018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89834CAB40C471E89BCECDF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "owned-TaperJouer/owned-TaperJouer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Masonry\"",
+					"\"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "owned-TaperJouer/owned-TaperJouer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/external/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos",
+				);
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -400,12 +498,25 @@
 		};
 		E555BE59196793F100F65018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C89834CAB40C471E89BCECDF /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "owned-TaperJouer/owned-TaperJouer-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"${PODS_ROOT}/Headers\"",
+					"\"${PODS_ROOT}/Headers/Masonry\"",
+					"\"$(BUILD_ROOT)/../IntermediateBuildFilesPath/UninstalledProducts/include\"",
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "owned-TaperJouer/owned-TaperJouer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/external/ReactiveCocoa/ReactiveCocoaFramework/build/Debug-iphoneos",
+				);
+				OTHER_CODE_SIGN_FLAGS = "-gta";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +581,7 @@
 				E555BE59196793F100F65018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E555BE5A196793F100F65018 /* Build configuration list for PBXNativeTarget "owned-TaperJouerTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +590,7 @@
 				E555BE5C196793F100F65018 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

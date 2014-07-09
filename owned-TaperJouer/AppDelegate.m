@@ -7,12 +7,58 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "HistoryViewController.h"
+#import "ViewModel.h"
+
+@interface AppDelegate ()
+
+@property (nonatomic, strong) ViewModel *viewModel;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    ViewModel *viewModel = [[ViewModel alloc] init];
+    self.viewModel = viewModel;
+    
+    MainViewController *mainVC = [[MainViewController alloc] initWithViewModel:(ViewModel *)viewModel];
+    HistoryViewController *historyVC = [[HistoryViewController alloc] initWithViewModel:(ViewModel *)viewModel];
+    
+    UINavigationController *mainNVC = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    UINavigationController *historyNVC = [[UINavigationController alloc] initWithRootViewController:historyVC];
+    
+    [mainVC setHistoryVC:historyVC];
+    
+    if (IS_IPAD) {
+        UISplitViewController *splitVC = [[UISplitViewController alloc] init];
+        
+        [splitVC setViewControllers:@[historyNVC, mainNVC]];
+        [splitVC setDelegate:mainVC];
+        
+        [_window setRootViewController:splitVC];
+        
+    } else {
+        // We still use NavigationControllers for iPhone even though we don't need the navigation bars
+        // because they automatically keep things from showing under the statusbar in iOS 7.
+        // (Alternatively, could have embedded the TableViewController in another view and used auto-layout
+        // with topLayoutGuide, but that's even more complicated for the HistoryViewController)
+        
+        mainNVC.navigationBarHidden = YES;
+        historyNVC.navigationBarHidden = YES;
+        
+        UITabBarController *tabVC = [[UITabBarController alloc] init];
+        [tabVC setViewControllers:@[mainNVC, historyNVC]];
+        
+        [_window setRootViewController:tabVC];
+    }
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 							
