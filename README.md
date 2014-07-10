@@ -36,7 +36,7 @@ Fonctionnalité :
   - montre l'index de la chanson et le nombre de chansons
   - montre le progrès de la musique qui joue
 - Historique de la musique
-  - on peut selectionner pour re-jouer la chancer
+  - on peut selectionner pour re-jouer la chanson
 - Gestures
   - comprend le double-tap et les swipes dans plusieurs sens pour commencer
     la musique et changer de chansons
